@@ -1,0 +1,167 @@
+<html>
+
+<head>
+  <meta charset="utf8" />
+  <meta name="referrer" content="never">
+  <title>十月新番导视</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+</head>
+
+<body>
+  <div class="ui text container" style="padding-top: 2em;padding-bottom: 2em">
+    <div class="ui huge header">十月新番导视</div>
+    <div class="ui divider"></div>
+    <div class="ui  button" data-content="成为一个优秀的CTFer的必要条件是成为一名资深的二刺螈。所以，开始看番吧！我精心为你准备了十月新番导视。" id="hint">
+      点我获得flag提示
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui people shape">
+      <div class="sides">
+        <div class="active side">
+          <div class="ui card">
+            <div class="image">
+              <img src="https://lain.bgm.tv/pic/cover/l/29/03/325612_8oF64.jpg">
+            </div>
+            <div class="content">
+              <div class="header"><a href="https://bgm.tv/subject/325612#description.php?id=1">蓝色时期</a></div>
+              <div class="description">
+                ブルーピリオド
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                开播日期：2021年10月1日
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="ui card">
+            <div class="image">
+              <img src="https://lain.bgm.tv/pic/cover/l/93/b0/331535_6Lhh8.jpg">
+            </div>
+            <div class="content">
+              <div class="header"><a href="https://bgm.tv/subject/331535#description.php?id=2">宿命回响</a></div>
+              <div class="description">
+                takt op.Destiny
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                开播日期：2021年10月5日
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="ui card">
+            <div class="image">
+              <img src="https://lain.bgm.tv/pic/cover/l/73/b8/333442_71ddd.jpg">
+            </div>
+            <div class="content">
+              <div class="header"><a href="https://bgm.tv/subject/333442#description.php?id=3">世界尽头的圣骑士</a></div>
+              <div class="description">
+                最果てのパラディン
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                开播日期：2021年10月9日
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="ui card">
+            <div class="image">
+              <img src="https://lain.bgm.tv/pic/cover/l/9a/c1/296109_052vK.jpg">
+            </div>
+            <div class="content">
+              <div class="header"><a href="https://bgm.tv/subject/296109#description.php?id=4">国王排名</a></div>
+              <div class="description">
+                王様ランキング
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                开播日期：2021年10月14日
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="ui card">
+            <div class="image">
+              <img src="https://lain.bgm.tv/pic/cover/l/bc/6b/330973_HpbMw.jpg">
+            </div>
+            <div class="content">
+              <div class="header"><a href="https://bgm.tv/subject/330973#description.php?id=5">看得见的女孩</a></div>
+              <div class="description">
+                見える子ちゃん
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                开播日期：2021年10月3日
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="ui card">
+            <div class="image">
+              <img src="https://lain.bgm.tv/pic/cover/l/e4/44/335225_UmKwl.jpg">
+            </div>
+            <div class="content">
+              <div class="header"><a href="https://bgm.tv/subject/335225#description.php?id=6">古见同学有交流障碍症</a></div>
+              <div class="description">
+                古見さんは、コミュ症です。
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                开播日期：2021年10月6日
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui icon buttons">
+      <button class="ui button" id="btn1"><i class="arrow left icon"></i></button>
+      <button class="ui button" id="btn2"><i class="arrow up icon"></i></button>
+      <button class="ui button" id="btn3"><i class="arrow down icon"></i></button>
+      <button class="ui button" id="btn4"><i class="arrow right icon"></i></button>
+    </div>
+    <div class="ui icon buttons">
+      <button class="ui button" id="btn5"><i class="redo alternate icon"></i></button>
+      <button class="ui button" id="btn6"><i class="undo icon"></i></button>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+$('#hint').popup();
+$("#btn1").click(function(){
+  $('.shape').shape('flip left');
+});
+$("#btn2").click(function(){
+  $('.shape').shape('flip up');
+});
+$("#btn3").click(function(){
+  $('.shape').shape('flip down');
+});
+$("#btn4").click(function(){
+  $('.shape').shape('flip right');
+});
+$("#btn5").click(function(){
+  $('.shape').shape('flip over');
+});
+$("#btn6").click(function(){
+  $('.shape').shape('flip back');
+});
+</script>
